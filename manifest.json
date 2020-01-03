@@ -1,0 +1,16 @@
+{
+    "name": "Wirecutter Recharge Sprint Trello Background Image",
+    "version": "1.0",
+    "description": "An extension to override the Trello background image",
+    "manifest_version": 2,
+    "permissions": ["tabs", "https://trello.com/b/qYciu7I4/recharge-2020"],
+    "content_scripts": [
+       {
+          "matches": ["https://*.trello.com/*"],
+          "css": ["styles/trello_background.css"]
+       }
+    ],
+    "web_accessible_resources": [
+      "images/image.png"
+    ]
+}
